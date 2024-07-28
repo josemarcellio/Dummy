@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'com.josemarcellio.dummy'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+jar {
+    archiveFileName = "Dummy.jar"
+    manifest {
+        attributes(
+                'Main-Class': 'com.josemarcellio.dummy.Dummy'
+        )
+    }
+}
